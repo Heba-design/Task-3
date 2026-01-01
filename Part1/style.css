@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* الصفحة */
+
 body {
   min-height: 100vh;
   background: #f5f3ee;
@@ -13,13 +13,13 @@ body {
   align-items: center;
 }
 
-/* الكونتينر */
+
 .cards-container {
   display: flex;
   gap: 40px;
 }
 
-/* الكارت */
+
 .card {
   width: 280px;
   height: 380px;
@@ -34,16 +34,16 @@ body {
   transition: background 0.4s ease;
 }
 
-/* خلفية الهوفر */
+
 .card:hover {
   background: #f3f1a5;
 }
 
-/* الصورة */
+
 .img-box {
   width: 260px;
   height: 260px;
-  margin-top: 24px;      /* تثبيت الصورة فوق */
+  margin-top: 24px;      
   transition: 0.4s ease;
 }
 
@@ -54,7 +54,7 @@ body {
   border-radius: 6px;
 }
 
-/* المحتوى */
+
 .content {
   margin-top: 18px;
   text-align: center;
@@ -74,7 +74,7 @@ body {
   color: #555;
 }
 
-/* الأيقونات */
+
 .icons {
   display: flex;
   justify-content: center;
@@ -87,7 +87,7 @@ body {
   font-size: 16px;
 }
 
-/* التأثير */
+
 .card:hover .img-box {
   transform: translateY(-18px) scale(0.93);
 }
