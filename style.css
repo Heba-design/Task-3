@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* الصفحة */
+body {
+  min-height: 100vh;
+  background: #f5f3ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* الكونتينر */
+.cards-container {
+  display: flex;
+  gap: 40px;
+}
+
+/* الكارت */
+.card {
+  width: 280px;
+  height: 380px;
+  border-radius: 14px;
+  background: transparent;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: background 0.4s ease;
+}
+
+/* خلفية الهوفر */
+.card:hover {
+  background: #f3f1a5;
+}
+
+/* الصورة */
+.img-box {
+  width: 260px;
+  height: 260px;
+  margin-top: 24px;      /* تثبيت الصورة فوق */
+  transition: 0.4s ease;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* المحتوى */
+.content {
+  margin-top: 18px;
+  text-align: center;
+
+  opacity: 0;
+  transform: translateY(12px);
+  transition: 0.4s ease;
+}
+
+.content h3 {
+  font-size: 16px;
+}
+
+.content p {
+  margin: 6px 0 14px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* الأيقونات */
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #111;
+  font-size: 16px;
+}
+
+/* التأثير */
+.card:hover .img-box {
+  transform: translateY(-18px) scale(0.93);
+}
+
+.card:hover .content {
+  opacity: 1;
+  transform: translateY(0);
+}
