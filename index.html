@@ -1,88 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Card Hover Transform</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <title>Flip Card Task</title>    <!-- ربط ملف الـ CSS -->    <link rel="stylesheet" href="style.css">  
+</head>  
+<body>  
+<div class="page-bg">  
+<div class="card-wrapper">  
 
-  <div class="cards-container">
+<input type="checkbox" id="flip" hidden>  
+<div class="card">  
 
-    <div class="card">
-      <div class="img-box">
-        <img src="images/image1.jpg" alt="">
-      </div>
+<!-- ================= FRONT ================= -->  
+<div class="card-face card-front">  
+ <img src="/image/front.jpg"alt="Card Image" class="card-image"  >  
+  <div class="front-content">  
+    <h2>  
+  Financial Sector <br>  
+  Development Program  
+   </h2>  
 
-      <div class="content">
-        <h3>Dewey Bruen</h3>
-        <p>Founder</p>
+    <label for="flip" class="arrow-btn">  
+          →  
+     </label>  
+  </div>  
+</div>  
 
-        <div class="icons">
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-square-linkedin"></i></a>
-          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-        </div>
-      </div>
-    </div>
+<!-- ================= BACK ================= -->  
+  <div class="card-face card-back">  
 
-    <div class="card">
-      <div class="img-box">
-        <img src="images/image2.jpg" alt="">
-      </div>
+      <!-- logo -->  
+<img src="/image/icon.png"alt="Logo"class="logo"  >  
+ <h2>  
+  Financial Sector <br>  
+  Development Program  
+  </h2>  
 
-      <div class="content">
-        <h3>Shannon Ó Conner</h3>
-        <p>Co Founder</p>
+  <p>  
+    The Program aims to develop a diversified and effective  
+    financial sector to support the development of the  
+    Saudi Arabia's economy.  
+  </p>  
 
-        <div class="icons">
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-square-linkedin"></i></a>
-          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-        </div>
-      </div>
-    </div>
+  <div class="back-footer">  
+    <span>Read More</span>  
 
-    <div class="card">
-      <div class="img-box">
-        <img src="images/image3.jpg" alt="">
-      </div>
+      <label for="flip" class="arrow-btn">  
+          ←  
+      </label>  
+  </div>  
 
-      <div class="content">
-        <h3>Amber Zulauf</h3>
-        <p>UX Designer</p>
+  </div>  
 
-        <div class="icons">
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-square-linkedin"></i></a>
-          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-        </div>
-      </div>
-    </div>
+</div>  
+</div>
+</div>
 
-    <div class="card">
-      <div class="img-box">
-        <img src="images/image4.jpg" alt="">
-      </div>
+</body> 
 
-      <div class="content">
-        <h3>Kenny Cassin</h3>
-        <p>UI Designer</p>
-
-        <div class="icons">
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-square-linkedin"></i></a>
-          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-</body>
 </html>
